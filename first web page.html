@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Greek God Factory</title>
+    <link rel="stylesheet" href="css/firstcssfile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <style>
+        /* CSS reset */
+        body {
+            margin: 0 px;
+            padding: 0 px;
+            color: white;
+            background: url('img/gym.aunty.jpg');
+
+        }
+
+        .left {
+            /* border: 2px solid blue; */
+            /*sets biarder width , border display and border color accordingly*/
+            position: absolute;
+            /*The element is positioned relative to its first positioned (not static) ancestor element*/
+            display: inline-block;
+            width: 168px;
+            left: 30px;
+            top: 20px;
+
+        }
+
+        .left img {
+            width: 120px;
+            /* height: 100px; */
+            filter: invert(100%);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 23px;
+            font-size: 16px;
+            font-family: 'Baloo 2', cursive;
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            width: 39%;
+            margin: 20px auto;
+
+
+        }
+
+        .right {
+            position: absolute;
+            display: inline-block;
+            right: 30px;
+            top: 20px;
+
+            /* border: 2px solid rgb(222, 15, 143); */
+        }
+
+        .navbar {
+            display: inline-block;
+            /*display: inline-block allows to set a width and height on the element.*/
+        }
+
+        .navbar li {
+            display: inline-block;
+            /* color: white; this won't change the colors of the elements written in the list for that you need to go inside the anchor tag to change the colours as you want*/
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            /*removes the underline from the created href links*/
+            padding: 11px 13px;
+            font-family: 'Baloo 2';
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .btn {
+            padding: 3px;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            border: 3px solid grey;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Baloo 2', cursive;
+        }
+
+        .btn:hover {
+            background-color: gray;
+        }
+
+        .container {
+            border: 3px solid white;
+            margin: 60px 925px;
+            padding: 20px 20px;
+            border-radius: 25px;
+            width: 33%;
+            height: 320px;
+            font-family: 'Baloo 2', cursive;
+            /* display: inline-block;
+            margin: 60px auto; */
+        }
+
+        .form-group input {
+            font-family: 'Baloo 2', cursive;
+            display: block;
+            text-align: center;
+            padding: 4px 4px;
+            margin: 4px auto;
+            /*it will centre align the input elements*/
+            border: 2px solid wheat;
+            font-size: 15px;
+            border-radius: 10px;
+        }
+
+        .container button {
+            display: block;
+            width: 39%;
+            margin: 8px auto;
+        }
+
+        .container h1 {
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left bar for logo -->
+            <img src="img/gym logo.jpeg" alt="picture not found">
+            <div>THE GREEK GOD FACTORY</div>
+        </div>
+        <div class="mid">
+            <!-- mid bar for navigation bar -->
+
+            <ul class="navbar">
+                <li><a href='#' class="active">Home</a></li>
+                <li><a href='#'>Fitness Calculator</a></li>
+                <li><a href='#'>About Us</a></li>
+                <li><a href='#'>Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- right bar for buttons -->
+            <button class="btn">Call US Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+
+        <h1>Let's rise to the level of Gods!!!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Ypur Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Phone No.">
+            </div>
+            <button class="btn">Submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
